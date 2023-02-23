@@ -1,6 +1,6 @@
 const properties = require('./json/properties.json');
 const users = require('./json/users.json');
-const pool = require('../db');
+const pool = require('./db');
 
 /// Users
 
