@@ -45,6 +45,10 @@
   * `apiRoutes.js` and `userRoutes.js` are responsible for any HTTP requests to `/users/something` or `/api/something`. 
   * `database.js` is responsible for all queries to the database.
 
+### ERD
+
+![lightbnb_erd drawio](https://user-images.githubusercontent.com/114053788/221342969-5b081881-7f7e-49d4-805c-d75368d33f33.png)
+
 ## Setup
 
 ### Dependencies
@@ -103,3 +107,9 @@ DATABASE = <database name>
 npm run local
 ```
 * In a browser of your choice, navigate to `localhost:3000`
+
+## Demo
+
+https://user-images.githubusercontent.com/114053788/221342991-5e6852cc-3b53-41ef-88b5-b9218de2f376.mp4
+
+
