@@ -16,10 +16,7 @@ const getUserWithEmail = function(email) {
       `SELECT id, name, email, password 
     FROM users
     WHERE email = $1`, [email])
-    .then((result) => result.rows[0] || null)
-    .catch((err) => {
-      throw err;
-    });
+    .then((result) => result.rows[0] || null);
 };
 exports.getUserWithEmail = getUserWithEmail;
 
@@ -35,10 +32,7 @@ const getUserWithId = function(id) {
       `SELECT id, name, email, password 
     FROM users
     WHERE id = $1`, [id])
-    .then((result) => result.rows[0] || null)
-    .catch((err) => {
-      throw err;
-    });
+    .then((result) => result.rows[0] || null);
 
 };
 exports.getUserWithId = getUserWithId;
@@ -55,10 +49,7 @@ const addUser = function(user) {
       `INSERT INTO users (name, password, email) 
      VALUES ($1, $2, $3)
      RETURNING *`, [user.name, user.password, user.email])
-    .then((result) => result.rows[0])
-    .catch((err) => {
-      throw err;
-    });
+    .then((result) => result.rows[0]);
 };
 exports.addUser = addUser;
 
@@ -81,10 +72,7 @@ const getAllReservations = function(guest_id, limit = 10) {
     GROUP BY properties.id, reservations.id
     ORDER BY reservations.start_date
     LIMIT $2`, [guest_id, limit])
-    .then((result) => result.rows)
-    .catch((err) => {
-      throw err;
-    });
+    .then((result) => result.rows);
 };
 exports.getAllReservations = getAllReservations;
 
@@ -149,10 +137,7 @@ LIMIT $${queryParams.length};
 
 return pool
   .query(queryString, queryParams)
-  .then((result) => result.rows)
-  .catch((err) => {
-    throw err;
-  });
+  .then((result) => result.rows);
 
 };
 exports.getAllProperties = getAllProperties;
@@ -188,9 +173,6 @@ const addProperty = function(property) {
       `INSERT INTO properties (owner_id, title, description, thumbnail_photo_url, cover_photo_url, cost_per_night, street, city, province, post_code, country, parking_spaces, number_of_bathrooms, number_of_bedrooms)
       VALUES ($1, $2, $3, $4, $5, $6, $7, $8, $9, $10, $11, $12, $13, $14)
       RETURNING *`, orderedPropertyArray)
-    .then((result) => result.rows[0])
-    .catch((err) => {
-      throw err;
-    });
+    .then((result) => result.rows[0]);
 };
 exports.addProperty = addProperty;
