@@ -69,8 +69,7 @@
   
 * Install dependencies with `npm i` command 
 * Create a PostgreSQL database by:
-  - [Installing](https://www.postgresql.org/docs/current/tutorial-install.html) (Alt. OS-specific install: [Windows](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/), [Mac](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-macos/)) it in your environment (Ubuntu Linux in my case)
-  Additional
+  - [Installing](https://www.postgresql.org/docs/current/tutorial-install.html) (Alt. OS-specific install: [Windows](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/), [Mac](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-macos/)) it in your environment (Ubuntu Linux in my case).
   - Once configured, enter the PostgreSQL shell from your bash CLI using the following command:
   ```
   psql
