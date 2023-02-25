@@ -69,7 +69,7 @@
   
 * Install dependencies with `npm i` command 
 * Create a PostgreSQL database by:
-  - [installing](https://www.postgresql.org/docs/current/tutorial-install.html) (Alt. OS-specific install: [Windows](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/), [Mac](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-macos/)) it in your environment (Ubuntu Linux in my case)
+  - [Installing](https://www.postgresql.org/docs/current/tutorial-install.html) (Alt. OS-specific install: [Windows](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql/), [Mac](https://www.postgresqltutorial.com/postgresql-getting-started/install-postgresql-macos/)) it in your environment (Ubuntu Linux in my case)
   Additional
   - Once configured, enter the PostgreSQL shell from your bash CLI using the following command:
   ```
@@ -84,10 +84,11 @@
   - If you get prompted for the database information, you may specify desired values for each field, or you may keep the defaults by hitting enter (**keep note of these values**).
   - Use [this](https://www.postgresqltutorial.com/postgresql-getting-started/connect-to-postgresql-database/) guide if you used the alternate installation links from earlier.
   
-  > **This part is OS agnostic provided a successful conection to the PostgreSQL shell**
+  
+  >**This part is OS agnostic provided a successful conection to the PostgreSQL shell**
 
-  - [create](https://www.postgresql.org/docs/15/sql-createdatabase.html) the database with a name of your choice ('lightbnb' for example) 
-  - create the accompanying tables by using this [schema](/migrations/01_schema.sql) running the following command:
+  - [Create](https://www.postgresql.org/docs/15/sql-createdatabase.html) the database with a name of your choice ('lightbnb' for example) 
+  - Create the accompanying tables by using this [schema](/migrations/01_schema.sql) running the following command:
   
   ```
   \i /migrations/01_schema.sql
