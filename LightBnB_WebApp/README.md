@@ -74,7 +74,7 @@
   ```
   psql
   ```
-  - If you encounter an error, it may due to the postgres server not automatically starting, if so run the following command:
+  - If you encounter an error, it may be due to the Postgres server not automatically starting. If that is the case, run the following command:
   
   ```
   startpostgres
