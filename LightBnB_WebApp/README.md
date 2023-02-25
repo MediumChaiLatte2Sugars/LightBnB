@@ -76,36 +76,48 @@
   psql
   ```
   - If you encounter an error, it may due to the postgres server not automatically starting, if so run the following command:
+  
   ```
   startpostgres
   ```
+  
   - If you get prompted for the database information, you may specify desired values for each field, or you may keep the defaults by hitting enter (**keep note of these values**).
   - Use [this](https://www.postgresqltutorial.com/postgresql-getting-started/connect-to-postgresql-database/) guide if you used the alternate installation links from earlier.
+  
   > **This part is OS agnostic provided a successful conection to the PostgreSQL shell**
   - [create](https://www.postgresql.org/docs/15/sql-createdatabase.html) the database with a name of your choice ('lightbnb' for example) 
   - create the accompanying tables by using this [schema](/migrations/01_schema.sql) running the following command:
+  
   ```
   \i /migrations/01_schema.sql
   ```
+  
   >If you encounter errors with this command, ensure that the file path is correct (i.e. the path resolves to the 01_schema.sql file)
   - Add the seeds by running the following commands:
+  
   ```
   \i /seeds/01_seeds.sql
   ```
+  
   ```
   \i /seeds/02_seeds.sql
   ```
+  
 * If dotenv is installed, configure the .env file as follows:
+
 ```
 DB_USER = <database username>
 DB_PASSWORD = <database password>
 DB_HOST = <database host>
 DATABASE = <database name>
 ```
+
 * Run the following command from your terminal
+
 ```
 npm run local
 ```
+
 * In a browser of your choice, navigate to `localhost:3000`
 
 ## Demo
