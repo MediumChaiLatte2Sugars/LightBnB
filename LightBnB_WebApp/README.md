@@ -85,6 +85,7 @@
   - Use [this](https://www.postgresqltutorial.com/postgresql-getting-started/connect-to-postgresql-database/) guide if you used the alternate installation links from earlier.
   
   > **This part is OS agnostic provided a successful conection to the PostgreSQL shell**
+
   - [create](https://www.postgresql.org/docs/15/sql-createdatabase.html) the database with a name of your choice ('lightbnb' for example) 
   - create the accompanying tables by using this [schema](/migrations/01_schema.sql) running the following command:
   
