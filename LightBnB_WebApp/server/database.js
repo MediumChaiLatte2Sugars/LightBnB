@@ -95,6 +95,11 @@ JOIN property_reviews ON properties.id = property_id
 `;
 
 // WHERE 
+
+/*
+Optional property filters. Retrieves the property/list of properties satisfying any combination of all or none 
+of the following parameters
+*/
 if (options.city) {
   queryParams.push(`%${options.city}%`);
   queryString += `WHERE city LIKE $${queryParams.length} `;
